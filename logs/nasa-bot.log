@@ -1,0 +1,272 @@
+2025-08-29T12:28:44.312-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 25996 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:28:44.317-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:28:44.402-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-29T12:28:44.403-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-29T12:28:45.833-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:28:45.909-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1504 ms
+2025-08-29T12:28:46.286-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:28:46.335-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : Attempting to register Telegram bot: Nasa_TelePOD_Bot
+2025-08-29T12:28:47.254-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ NASA Bot registered successfully!
+2025-08-29T12:28:47.255-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🤖 Bot username: Nasa_TelePOD_Bot
+2025-08-29T12:28:47.255-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🔑 Bot token: 8461374083...
+2025-08-29T12:28:47.358-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-29T12:28:47.652-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-29T12:28:47.706-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-29T12:28:47.720-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Started NasaTelegramBotApplication in 3.997 seconds (process running for 4.508)
+2025-08-29T12:29:14.643-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /start
+2025-08-29T12:29:14.646-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing /start command
+2025-08-29T12:29:15.052-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ Welcome message sent to chat: 6401969789
+2025-08-29T12:29:24.622-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /apod
+2025-08-29T12:29:24.623-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing APOD request
+2025-08-29T12:29:24.623-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Fetching NASA APOD for chat: 6401969789
+2025-08-29T12:29:25.863-05:00  INFO 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ APOD sent to chat: 6401969789
+2025-08-29T12:32:54.598-05:00  INFO 25996 --- [nasa-telegram-bot] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-29T12:32:54.694-05:00  INFO 25996 --- [nasa-telegram-bot] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29T12:32:54.792-05:00  INFO 25996 --- [nasa-telegram-bot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-29T12:32:55.098-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 25996 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:32:55.099-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:32:55.473-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:32:55.507-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 398 ms
+2025-08-29T12:32:55.534-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:32:55.539-05:00  WARN 25996 --- [nasa-telegram-bot] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nasaBot': Unsatisfied dependency expressed through field 'nasaService': Error creating bean with name 'nasaService' defined in file [C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes\com\nasa\nasa_telegram_bot\service\NasaService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-29T12:32:55.549-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-29T12:32:55.597-05:00 ERROR 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.nasa.nasa_telegram_bot.service.NasaService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2025-08-29T12:33:11.468-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 25996 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:33:11.469-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:33:11.856-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:33:11.885-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2025-08-29T12:33:11.906-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:33:11.909-05:00  WARN 25996 --- [nasa-telegram-bot] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nasaBot': Unsatisfied dependency expressed through field 'nasaService': Error creating bean with name 'nasaService' defined in file [C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes\com\nasa\nasa_telegram_bot\service\NasaService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-29T12:33:11.915-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-29T12:33:11.922-05:00 ERROR 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.nasa.nasa_telegram_bot.service.NasaService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2025-08-29T12:33:15.453-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 25996 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:33:15.453-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:33:15.731-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:33:15.760-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2025-08-29T12:33:15.784-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:33:15.787-05:00  WARN 25996 --- [nasa-telegram-bot] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nasaBot': Unsatisfied dependency expressed through field 'nasaService': Error creating bean with name 'nasaService' defined in file [C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes\com\nasa\nasa_telegram_bot\service\NasaService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-29T12:33:15.794-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-29T12:33:15.802-05:00 ERROR 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.nasa.nasa_telegram_bot.service.NasaService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2025-08-29T12:34:08.401-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 25996 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:34:08.401-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:34:08.678-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:34:08.702-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 297 ms
+2025-08-29T12:34:08.717-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:34:08.725-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : Attempting to register Telegram bot: Nasa_TelePOD_Bot
+2025-08-29T12:34:09.362-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ NASA Bot registered successfully!
+2025-08-29T12:34:09.362-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🤖 Bot username: Nasa_TelePOD_Bot
+2025-08-29T12:34:09.363-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🔑 Bot token: 8461374083...
+2025-08-29T12:34:09.395-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-29T12:34:09.491-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-29T12:34:09.506-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-29T12:34:09.515-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Started NasaTelegramBotApplication in 1.152 seconds (process running for 326.303)
+2025-08-29T12:34:09.519-05:00  INFO 25996 --- [nasa-telegram-bot] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-29T12:34:10.077-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:13.763-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:14.479-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:18.168-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:18.882-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:22.571-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:23.234-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:26.973-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:27.690-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:31.377-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:32.093-05:00 ERROR 25996 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T12:34:46.558-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 18744 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T12:34:46.561-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T12:34:46.645-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-29T12:34:46.645-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-29T12:34:48.072-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T12:34:48.163-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1516 ms
+2025-08-29T12:34:48.512-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T12:34:48.549-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : Attempting to register Telegram bot: Nasa_TelePOD_Bot
+2025-08-29T12:34:49.456-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ NASA Bot registered successfully!
+2025-08-29T12:34:49.456-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🤖 Bot username: Nasa_TelePOD_Bot
+2025-08-29T12:34:49.457-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🔑 Bot token: 8461374083...
+2025-08-29T12:34:49.557-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-29T12:34:49.823-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-29T12:34:49.868-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-29T12:34:49.880-05:00  INFO 18744 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Started NasaTelegramBotApplication in 3.963 seconds (process running for 4.48)
+2025-08-29T12:35:17.651-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /start
+2025-08-29T12:35:17.651-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing /start command
+2025-08-29T12:35:18.075-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ Welcome message sent to chat: 6401969789
+2025-08-29T12:35:19.919-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /apod
+2025-08-29T12:35:19.920-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing APOD request
+2025-08-29T12:35:19.920-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Fetching NASA APOD for chat: 6401969789
+2025-08-29T12:35:21.146-05:00  INFO 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ APOD sent to chat: 6401969789
+2025-08-29T13:00:04.335-05:00 ERROR 18744 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Connection reset
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:249) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
