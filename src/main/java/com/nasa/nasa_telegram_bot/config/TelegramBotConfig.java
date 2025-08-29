@@ -19,11 +19,6 @@ public class TelegramBotConfig {
     @Value("${telegram.bot.username}")
     private String botUsername;
     
-    @Bean
-    public TelegramBotsApi telegramBotsApi() throws TelegramApiException {
-        return new TelegramBotsApi(DefaultBotSession.class);
-    }
-    
     public String getNasaApiKey() {
         return nasaApiKey;
     }

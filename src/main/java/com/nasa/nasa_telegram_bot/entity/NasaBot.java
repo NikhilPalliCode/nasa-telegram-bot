@@ -1,55 +1,36 @@
 package com.nasa.nasa_telegram_bot.entity;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import com.nasa.nasa_telegram_bot.service.NasaService;
 
-import jakarta.annotation.PostConstruct;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 @Component
-public class NasaBot extends org.telegram.telegrambots.bots.TelegramLongPollingBot {
+public class NasaBot extends TelegramLongPollingBot {
     
     private static final Logger logger = LoggerFactory.getLogger(NasaBot.class);
     
-    @Autowired
-    private NasaService nasaService;
-    
-    @Autowired
-    private TelegramBotsApi telegramBotsApi;
-    
+    private final NasaService nasaService;
     private final String botUsername;
     private final String botToken;
     
-    public NasaBot(@Value("${telegram.bot.username}") String botUsername,
+    public NasaBot(NasaService nasaService,
+                  @Value("${telegram.bot.username}") String botUsername,
                   @Value("${telegram.bot.token}") String botToken) {
-        super(botToken);
+        super(botToken); // This sets up long polling automatically
+        this.nasaService = nasaService;
         this.botUsername = botUsername;
         this.botToken = botToken;
-        logger.info("NasaBot constructor called with username: {}", botUsername);
-    }
-    
-    @PostConstruct
-    public void registerBot() {
-        try {
-            logger.info("Attempting to register Telegram bot: {}", botUsername);
-            telegramBotsApi.registerBot(this);
-            logger.info("✅ NASA Bot registered successfully!");
-            logger.info("🤖 Bot username: {}", botUsername);
-            logger.info("🔑 Bot token: {}", botToken.substring(0, 10) + "..."); // Log partial token for security
-        } catch (TelegramApiException e) {
-            logger.error("❌ Failed to register bot: {}", e.getMessage(), e);
-        } catch (Exception e) {
-            logger.error("❌ Unexpected error during bot registration: {}", e.getMessage(), e);
-        }
+        logger.info("🤖 NASA Bot initialized with long polling");
+        logger.info("📝 Bot username: {}", botUsername);
     }
     
     @Override
@@ -59,25 +40,22 @@ public class NasaBot extends org.telegram.telegrambots.bots.TelegramLongPollingB
     
     @Override
     public void onUpdateReceived(Update update) {
-        logger.debug("Received update: {}", update);
+        logger.info("📨 Received message from Telegram");
         
         if (update.hasMessage() && update.getMessage().hasText()) {
             String messageText = update.getMessage().getText();
             Long chatId = update.getMessage().getChatId();
             String userName = update.getMessage().getChat().getUserName();
             
-            logger.info("📨 Message from @{} ({}): {}", userName, chatId, messageText);
+            logger.info("👤 User: @{}, Chat ID: {}, Message: {}", userName, chatId, messageText);
             
             if (messageText.equalsIgnoreCase("/start")) {
-                logger.info("Processing /start command");
                 sendWelcomeMessage(chatId);
             } else if (messageText.equalsIgnoreCase("/apod") || 
                       messageText.equalsIgnoreCase("nasa") ||
                       messageText.equalsIgnoreCase("picture of the day")) {
-                logger.info("Processing APOD request");
                 sendAstronomyPicture(chatId);
             } else {
-                logger.info("Processing unknown command: {}", messageText);
                 sendHelpMessage(chatId);
             }
         }
@@ -91,35 +69,13 @@ public class NasaBot extends org.telegram.telegrambots.bots.TelegramLongPollingB
                            "/start - Show this welcome message\n\n" +
                            "Just type 'nasa' or 'picture of the day' to get started!";
         
-        SendMessage message = new SendMessage();
-        message.setChatId(chatId.toString());
-        message.setText(welcomeText);
-        message.setParseMode("Markdown");
-        
-        try {
-            execute(message);
-            logger.info("✅ Welcome message sent to chat: {}", chatId);
-        } catch (TelegramApiException e) {
-            logger.error("❌ Failed to send welcome message: {}", e.getMessage(), e);
-        }
+        sendMessage(chatId, welcomeText, "Welcome message");
     }
     
     private void sendAstronomyPicture(Long chatId) {
-        logger.info("Fetching NASA APOD for chat: {}", chatId);
+        logger.info("🌌 Fetching NASA APOD for chat: {}", chatId);
         String apodInfo = nasaService.getAstronomyPictureOfTheDay();
-        
-        SendMessage message = new SendMessage();
-        message.setChatId(chatId.toString());
-        message.setText(apodInfo);
-        message.setParseMode("Markdown");
-        message.disableWebPagePreview();
-        
-        try {
-            execute(message);
-            logger.info("✅ APOD sent to chat: {}", chatId);
-        } catch (TelegramApiException e) {
-            logger.error("❌ Failed to send APOD: {}", e.getMessage(), e);
-        }
+        sendMessage(chatId, apodInfo, "APOD data");
     }
     
     private void sendHelpMessage(Long chatId) {
@@ -130,16 +86,21 @@ public class NasaBot extends org.telegram.telegrambots.bots.TelegramLongPollingB
                         "• 'nasa' - Get astronomy picture\n" +
                         "• 'picture of the day' - Get astronomy picture";
         
+        sendMessage(chatId, helpText, "Help message");
+    }
+    
+    private void sendMessage(Long chatId, String text, String messageType) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId.toString());
-        message.setText(helpText);
+        message.setText(text);
         message.setParseMode("Markdown");
+        message.disableWebPagePreview();
         
         try {
             execute(message);
-            logger.info("✅ Help message sent to chat: {}", chatId);
+            logger.info("✅ {} sent successfully to chat: {}", messageType, chatId);
         } catch (TelegramApiException e) {
-            logger.error("❌ Failed to send help message: {}", e.getMessage(), e);
+            logger.error("❌ Failed to send {}: {}", messageType, e.getMessage(), e);
         }
     }
 }
