@@ -270,3 +270,71 @@ java.net.SocketException: Connection reset
 	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:249) ~[telegrambots-6.9.7.1.jar:na]
 	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
 
+2025-08-29T15:46:02.668-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.n.n.NasaTelegramBotApplicationTests    : Starting NasaTelegramBotApplicationTests using Java 17.0.8 with PID 18652 (started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T15:46:02.671-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.n.n.NasaTelegramBotApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T15:46:03.978-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T15:46:04.019-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.nasa.nasa_telegram_bot.entity.NasaBot  : Attempting to register Telegram bot: Nasa_TelePOD_Bot
+2025-08-29T15:46:04.945-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.nasa.nasa_telegram_bot.entity.NasaBot  : ? NASA Bot registered successfully!
+2025-08-29T15:46:04.946-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.nasa.nasa_telegram_bot.entity.NasaBot  : ? Bot username: Nasa_TelePOD_Bot
+2025-08-29T15:46:04.946-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.nasa.nasa_telegram_bot.entity.NasaBot  : ? Bot token: 8461374083...
+2025-08-29T15:46:05.141-05:00  INFO 18652 --- [nasa-telegram-bot] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-29T15:46:05.443-05:00  INFO 18652 --- [nasa-telegram-bot] [main] c.n.n.NasaTelegramBotApplicationTests    : Started NasaTelegramBotApplicationTests in 3.198 seconds (process running for 4.508)
+2025-08-29T15:46:29.227-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Starting NasaTelegramBotApplication using Java 17.0.8 with PID 34036 (C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot\target\classes started by nikhi in C:\Users\nikhi\OneDrive\Desktop\PROJECTS\nasa-telegram-bot)
+2025-08-29T15:46:29.232-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-29T15:46:29.303-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-29T15:46:29.303-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-29T15:46:30.508-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-29T15:46:30.587-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+2025-08-29T15:46:30.867-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : NasaBot constructor called with username: Nasa_TelePOD_Bot
+2025-08-29T15:46:30.898-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : Attempting to register Telegram bot: Nasa_TelePOD_Bot
+2025-08-29T15:46:31.755-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ NASA Bot registered successfully!
+2025-08-29T15:46:31.756-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🤖 Bot username: Nasa_TelePOD_Bot
+2025-08-29T15:46:31.756-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.nasa.nasa_telegram_bot.entity.NasaBot  : 🔑 Bot token: 8461374083...
+2025-08-29T15:46:31.843-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-29T15:46:32.091-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-29T15:46:32.141-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-29T15:46:32.156-05:00  INFO 34036 --- [nasa-telegram-bot] [restartedMain] c.n.n.NasaTelegramBotApplication         : Started NasaTelegramBotApplication in 3.519 seconds (process running for 4.041)
+2025-08-29T15:47:42.176-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /start
+2025-08-29T15:47:42.176-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing /start command
+2025-08-29T15:47:43.098-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ Welcome message sent to chat: 6401969789
+2025-08-29T15:47:45.141-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /apod
+2025-08-29T15:47:45.145-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing APOD request
+2025-08-29T15:47:45.145-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Fetching NASA APOD for chat: 6401969789
+2025-08-29T15:47:46.384-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ APOD sent to chat: 6401969789
+2025-08-29T16:41:30.307-05:00 ERROR 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Connection] o.t.t.u.DefaultBotSession                : Connection reset
+
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1065) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar:4.4.16]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.14.jar:4.5.14]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:249) ~[telegrambots-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188) ~[telegrambots-6.9.7.1.jar:na]
+
+2025-08-29T16:41:33.209-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : 📨 Message from @n1kk39 (6401969789): /start
+2025-08-29T16:41:33.215-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : Processing /start command
+2025-08-29T16:41:33.864-05:00  INFO 34036 --- [nasa-telegram-bot] [Nasa_TelePOD_Bot Telegram Executor] c.nasa.nasa_telegram_bot.entity.NasaBot  : ✅ Welcome message sent to chat: 6401969789
+2025-08-29T16:49:14.432-05:00  INFO 34036 --- [nasa-telegram-bot] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-29T16:49:14.551-05:00  INFO 34036 --- [nasa-telegram-bot] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29T16:49:14.638-05:00  INFO 34036 --- [nasa-telegram-bot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
