@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		  <start-class>com.nasa.nasa_telegram_bot.NasaTelegramBotApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,6 +59,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                <mainClass>com.nasa.nasa_telegram_bot.NasaTelegramBotApplication</mainClass>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>

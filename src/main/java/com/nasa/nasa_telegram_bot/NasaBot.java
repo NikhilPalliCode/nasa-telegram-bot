@@ -11,12 +11,24 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class NasaBot extends TelegramLongPollingBot {
     
     private final String botUsername;
+    private final String botToken;
     
     public NasaBot(@Value("${telegram.bot.token}") String botToken,
                   @Value("${telegram.bot.username}") String botUsername) {
         super(botToken);
+        this.botToken = botToken;
         this.botUsername = botUsername;
-        System.out.println("✅ Bot initialized: " + botUsername);
+        
+        System.out.println("✅ NASA Bot Initialized");
+        System.out.println("🤖 Username: " + botUsername);
+        
+        // Check if using real token
+        if (!botToken.equals("local_dummy_token_123") && !botToken.startsWith("local_")) {
+            System.out.println("🎉 Ready to receive Telegram messages!");
+            System.out.println("🔑 Token: " + botToken.substring(0, 10) + "...");
+        } else {
+            System.out.println("ℹ️  Local mode - Using dummy token");
+        }
     }
     
     @Override
@@ -26,9 +38,13 @@ public class NasaBot extends TelegramLongPollingBot {
     
     @Override
     public void onUpdateReceived(Update update) {
+        System.out.println("📨 Received message from Telegram");
+        
         if (update.hasMessage() && update.getMessage().hasText()) {
             String messageText = update.getMessage().getText();
             Long chatId = update.getMessage().getChatId();
+            
+            System.out.println("💬 Message: " + messageText);
             
             if (messageText.equalsIgnoreCase("/start")) {
                 sendMessage(chatId, "🚀 Welcome to NASA APOD Bot! Use /apod");
