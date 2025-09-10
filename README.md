@@ -30,7 +30,7 @@ A Spring Boot Telegram bot that provides NASA's Astronomy Picture of the Day (AP
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/nasa-telegram-bot.git
+git clone https://github.com/NikhilPalliCode/nasa-telegram-bot.git
 cd nasa-telegram-bot
 ```
 
