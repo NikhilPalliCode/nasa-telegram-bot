@@ -41,23 +41,3 @@ nasa.api.key=YOUR_NASA_API_KEY
 
 ## 📦 Deployment
 Deployed on Railway with automatic deployments on git push.
-
-## 📄 License
-MIT License - feel free to contribute!
-
----
-
-**⭐ Star this repo if you found it helpful!**
-```
-
-## 🔗 How to Add Your Actual Bot Link
-
-Replace `YourBotUsername` with your actual bot username. The link should look like:
-```
-https://t.me/YourActualBotUsername
-```
-
-For example, if your bot username is `@NasaApodBot`, the link would be:
-```markdown
-**Try the bot now: [Start Chatting](https://t.me/NasaApodBot)**
-```
